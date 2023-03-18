@@ -32,7 +32,7 @@ app.post("/", function (req, res) {
   
   const config = {
     headers: {
-      'Authorization':'parth10eecf4d3a917881867f40df1cd5b5a3d-us21'
+      'Authorization':'parth1 a0ffa80870d6c640f2b99f0cbcb49dc5-us21'
     }
   };
   
@@ -56,5 +56,5 @@ app.listen(3000, function (req, res) {
   console.log("server is running at port 3000");
 });
 
-// 0eecf4d3a917881867f40df1cd5b5a3d-us21          API key for newsletter
+// a0ffa80870d6c640f2b99f0cbcb49dc5-us21          API key for newsletter
 //  audience  id  b41a60c113

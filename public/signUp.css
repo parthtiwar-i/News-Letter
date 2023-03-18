@@ -12,9 +12,12 @@ body{
 
 }
 
+
+
 .heading{
     margin: 10%;
     text-align: center;
+    z-index: 1;
 }
 #Lname{
     margin-top: -1px;
@@ -30,6 +33,7 @@ body{
     border-top-right-radius:0;
     border-top-left-radius:0;
 }
+
 
 button, input{
     margin: 0 auto;
