@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(to bottom right ,#16222a,#3a6073);
+
+}
+
+.heading{
+    margin: 10%;
+    text-align: center;
+}
+#Lname{
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+#Fname{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#email{
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+
+button, input{
+    margin: 0 auto;
+    display: block;
+    width: 20rem;
+    height: 40px;
+}
+
+
+button{
+    border-radius: 2px;
+    border: 0px;
+    background-color: #122a3a72;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.793);
+    font-family: 'Playfair Display', serif;
+}
+
+button:hover{
+    background-color:#122a3a ;
+    box-shadow: 0 0 10px #678898;
+} 
+
+input, textarea{
+    background-color: #486776;
+    color: aliceblue;
+    border: 0.2px solid white;
+    border-radius: 3px;
+}
+::placeholder{
+    color: aliceblue;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e3eae5;
+    box-shadow: 0 0 10px #678898;
+  }
+
+h2{
+    margin: 0 0 2rem 0;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+}
+
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid white;
+}
+.box div:nth-child(1){
+    left: 12%;
+    top: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    right: 12%;
+    top: 45%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    left: 30%;
+    top: 65%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(4){
+    right: 30%;
+    top: 68%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(5){
+    left: 7%;
+    top: 82%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(6){
+    right: 8%;
+    top: 86%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(7){
+    right: 30%;
+    top: 20%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(8){
+    left: 30%;
+    top: 20%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(9){
+    right: 4%;
+    top: 6%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(10){
+    left: 7%;
+    top: 10%;
+    animation: animate 9s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform : scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform : scale(1.3) translateY(-90px) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.footer{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.484);
+}
