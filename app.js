@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const axios = require("axios");
 
+require("dotenv").config();
+
 //to parse the js object to json files and to get the data fro the inputs of the form 
 app.use(bodyParser.urlencoded({ extended: true }));
 //to use css files atteched to the html files in the res.sendFiles to render the css files
@@ -19,7 +21,7 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   
-
+  const API_KEY = process.env.API_KEY;
   const endpoint = "https://us21.api.mailchimp.com/3.0/lists/b41a60c113/members";
   var data = {
         email_address : req.body.email ,
@@ -32,7 +34,7 @@ app.post("/", function (req, res) {
   
   const config = {
     headers: {
-      'Authorization':'parth1 a0ffa80870d6c640f2b99f0cbcb49dc5-us21'
+      'Authorization': API_KEY
     }
   };
   
@@ -52,9 +54,9 @@ app.post("/failure" ,function(req,res){
   res.redirect("/");
 });
 
-app.listen(3000, function (req, res) {
+app.listen( process.env.PORT || 3000, function (req, res) {
   console.log("server is running at port 3000");
 });
 
-// a0ffa80870d6c640f2b99f0cbcb49dc5-us21          API key for newsletter
+// b285a89c42f95bdee3442bc4d4f45275-us21         API key for newsletter
 //  audience  id  b41a60c113
