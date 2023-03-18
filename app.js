@@ -34,7 +34,7 @@ app.post("/", function (req, res) {
   
   const config = {
     headers: {
-      'Authorization': "parth1 " + API_KEY
+      'Authorization': API_KEY
     }
   };
   
